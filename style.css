@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+body {
+    font-family: 'Patua One', cursive;
+}
+
+.container {
+    background-color: #d6d6d6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.box {
+    background-color: #f6f6f6;
+    width: auto;
+    height: auto;
+    border-radius: 30px 30px 100px 10px;
+    padding: 25px;
+}
+
+.inputs {
+    display: flex;
+    width: 60vw;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #f6f6f6;
+    padding-bottom: 20px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    border: #737373 1px solid;
+    font-size: 25px;
+    height: 66px;
+}
+
+button {
+    border-radius: 50%;
+    width: 10%;
+    height: 60px;
+    border: none;
+    background-color: #693abb;
+    color: white;
+    font-size: 25px;
+    margin-top: 4%;
+}
+
+label {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+input::placeholder {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.resultados {
+    border-top: 1px solid #737373;
+    padding-left: 5%;
+}
+
+span {
+    color: #693abb;
+    font-size: 90px;
+}
+
+p {
+    font-size: 90px;
+}
+
+@media screen and (max-width: 500px) {
+    .inputs {
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    button {
+      width: 20%;
+    }
+
+    .box {
+        margin-top: 10%;
+    }
+
+    p {
+        font-size: 75px;
+    }
+}
